@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherVision</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>🌤️ WeatherVision</h1>
+
+            <p class="subtitle">
+                Consulta el clima en tiempo real
+            </p>
+
+            <!-- MENSAJES DINÁMICOS -->
+            <div id="messageBox"></div>
+
+            <!-- BUSCADOR -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Ingresa una ciudad..."
+                >
+
+                <button onclick="getWeather()">
+                    Buscar
+                </button>
+
+            </div>
+
+            <!-- INFORMACIÓN DEL CLIMA -->
+            <div class="weather-info">
+
+                <div
+                    class="icon"
+                    id="weatherIcon"
+                >
+                    ☀️
+                </div>
+
+                <h2 id="cityName">
+                    Bogotá
+                </h2>
+
+                <h3 id="temperature">
+                    20°C
+                </h3>
+
+                <p id="description">
+                    Soleado
+                </p>
+
+                <div class="details">
+
+                    <div class="detail-card">
+
+                        <span>
+                            💧 Humedad
+                        </span>
+
+                        <strong id="humidity">
+                            50%
+                        </strong>
+
+                    </div>
+
+                    <div class="detail-card">
+
+                        <span>
+                            🌬️ Viento
+                        </span>
+
+                        <strong id="wind">
+                            10 km/h
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
